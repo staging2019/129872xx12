@@ -32,6 +32,8 @@
     opacity: 1; /* Firefox */
 }
 
+
+
 .center-screen {
   display: flex;
   flex-direction: column;
