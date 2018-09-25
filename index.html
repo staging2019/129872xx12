@@ -41,9 +41,9 @@ html, body {
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[7]='MMERGE7';ftypes[7]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
-<!-- This is the code you will get from Mailchimp’s NAKED Signup Form -->
+<!-- Mailchimp signup form *add mailchimp link to form action -->
 <div id="mc_embed_signup">
-    <form action="https://thejuicedaily.us19.list-manage.com/subscribe/post?u=47ba66d7b09165a162324a09e&amp;id=4658d8c070" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
 
  
@@ -69,26 +69,9 @@ html, body {
 </div>
 </div>
 
-<!--Footer-->
+<!--Footer with scrolling headlines-->
 <footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-    var marquee = $('div.marquee');
-    console.log(marquee);
-    marquee.each(function() {
-        var mar = $(this),indent = mar.width();
-        mar.marquee = function() {
-            indent--;
-            mar.css('text-indent',indent);
-            if (indent < -1 * mar.children('div.marquee-text').width()) {
-                indent = mar.width();
-            }
-        };
-        mar.data('interval',setInterval(mar.marquee,1000/60));
-    });
-});
-</script>
+
 <div class='marquee' style="width: 100%;">
     <div class='marquee-text'>
     <ul class="list-horizontal">
@@ -107,6 +90,24 @@ html, body {
  </div>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var marquee = $('div.marquee');
+    console.log(marquee);
+    marquee.each(function() {
+        var mar = $(this),indent = mar.width();
+        mar.marquee = function() {
+            indent--;
+            mar.css('text-indent',indent);
+            if (indent < -1 * mar.children('div.marquee-text').width()) {
+                indent = mar.width();
+            }
+        };
+        mar.data('interval',setInterval(mar.marquee,1000/60));
+    });
+});
+</script>
 
 </footer>
 </div>

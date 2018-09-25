@@ -20,8 +20,7 @@ var tl = new TimelineMax();
 paths.each(function(i, e) {
   e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();
 });
-//can be changed to "tl.to" to controle each mask animation
-//or make the mask path the same length then the text shows up the same speed
+
 tl.staggerTo(
   paths,
   0.4,
